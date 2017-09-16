@@ -1,0 +1,4 @@
+#!/bin/sh
+
+tag=$(git-latest-tag)
+git log $tag.. --merges --pretty=format:"%s"
