@@ -1,0 +1,4 @@
+#!/bin/sh
+
+now=$(date +%s)
+git tag $now
