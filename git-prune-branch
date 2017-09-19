@@ -1,0 +1,4 @@
+#!/bin/sh
+
+git fetch --all --prune
+git branch --format="%(refname:short)" --merged | grep -e master -e develop -v | xargs git branch -d
