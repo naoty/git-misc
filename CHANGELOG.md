@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+* `-u` and `--unix` option to `git-tag-timestamp` which enables to add timestamp in UNIX time
+
+### Changed
+* `git-tag-timestamp` adds timestamp in JST by default.
 
 ## [0.2.0] - 2017-09-19
 ### Added

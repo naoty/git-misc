@@ -1,4 +1,15 @@
 #!/bin/sh
 
-now=$(date +%s)
-git tag $now
+if [ $# = 0 ]; then
+  git tag $(date +%Y%m%d%H%M%S)
+  exit 0
+fi
+
+for OPT in "$@"
+do
+  case "$OPT" in
+    '-u'|'--unix')
+      git tag $(date +%s)
+      exit 0
+  esac
+done
